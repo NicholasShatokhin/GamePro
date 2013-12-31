@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Игра</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/background.jpg);
+color: rgb(255, 0, 0);
+
+QWidget { background-image: url(:/background.jpg); }</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>609</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="mainMenu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="newGameMenu"/>
+    <addaction name="settingsMenu"/>
+    <addaction name="statisticsMenu"/>
+    <addaction name="separator"/>
+    <addaction name="exitMenu"/>
+   </widget>
+   <addaction name="mainMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="newGameMenu">
+   <property name="text">
+    <string>Новая игра</string>
+   </property>
+  </action>
+  <action name="settingsMenu">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+  <action name="statisticsMenu">
+   <property name="text">
+    <string>Статистика</string>
+   </property>
+  </action>
+  <action name="exitMenu">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
